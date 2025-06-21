@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title style="color: goldenrod;">Login Page</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background: #2e2929;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background: #0d0d0de6;
+      padding: 50px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(236, 233, 233, 0.895);
+      width: 300px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 16px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      background-color: #45a049;
+    }
+
+    .login-container p {
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    .login-container a {
+      color: #0be2ea;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2 style="color:rgb(234, 234, 236);"><form action="/login" method="POST">
+      <h2> Login Form</h2>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit"><a href="webpage.html" style="color: white;">Login</a></button>
+    </form>
+    <p><h5 style="color: white;">Don't have an account?</h5> <a href="https://accounts.google.com/lifecycle/steps/signup/name?
+        continue=https://mail.google.com/mail/&dsh=S370755236:1749835791954051&ec=asw-gmail-globalnav
+        -create&flowEntry=SignUp&flowName=GlifWebSignIn&service=mail&theme=glif&TL=
+        ALgCv6y2tXJGI6cN2oQmytLQlp9HzIlwm8KYfLNlQkvL4VIui6tZCu0ZwJkSlfyE">Register</a></p>
+  </div>
+
+</body>
+</html>
